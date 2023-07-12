@@ -1,0 +1,130 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayer",
+        "printedName": "BitmovinPlayer",
+        "declKind": "Import",
+        "moduleName": "AdvancedFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinCollector",
+        "printedName": "BitmovinCollector",
+        "declKind": "Import",
+        "moduleName": "AdvancedFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "AdvancedFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleCast",
+        "printedName": "GoogleCast",
+        "declKind": "Import",
+        "moduleName": "AdvancedFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlayerWrapper",
+        "printedName": "PlayerWrapper",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlayerWrapper",
+                "printedName": "AdvancedFramework.PlayerWrapper",
+                "usr": "s:17AdvancedFramework13PlayerWrapperC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17AdvancedFramework13PlayerWrapperCACycfc",
+            "mangledName": "$s17AdvancedFramework13PlayerWrapperCACycfc",
+            "moduleName": "AdvancedFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AdvancedFramework13PlayerWrapperC5setupyyF",
+            "mangledName": "$s17AdvancedFramework13PlayerWrapperC5setupyyF",
+            "moduleName": "AdvancedFramework",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "play",
+            "printedName": "play()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AdvancedFramework13PlayerWrapperC4playyyF",
+            "mangledName": "$s17AdvancedFramework13PlayerWrapperC4playyyF",
+            "moduleName": "AdvancedFramework",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17AdvancedFramework13PlayerWrapperC",
+        "mangledName": "$s17AdvancedFramework13PlayerWrapperC",
+        "moduleName": "AdvancedFramework",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/luckygoyal\/TASKS\/NBA\/issue-ios-spm\/AdvancedFramework\/AdvancedFramework\/PlayerWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 839,
+      "length": 37,
+      "value": "\"urn:x-cast:com.mediakind.cast.media\""
+    },
+    {
+      "filePath": "\/Users\/luckygoyal\/TASKS\/NBA\/issue-ios-spm\/AdvancedFramework\/AdvancedFramework\/PlayerWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 955,
+      "length": 10,
+      "value": "\"5A468DEE\""
+    }
+  ]
+}
