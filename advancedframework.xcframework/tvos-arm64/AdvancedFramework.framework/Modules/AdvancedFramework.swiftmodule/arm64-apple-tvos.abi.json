@@ -1,0 +1,86 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayer",
+        "printedName": "BitmovinPlayer",
+        "declKind": "Import",
+        "moduleName": "AdvancedFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinCollector",
+        "printedName": "BitmovinCollector",
+        "declKind": "Import",
+        "moduleName": "AdvancedFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreCollector",
+        "printedName": "CoreCollector",
+        "declKind": "Import",
+        "moduleName": "AdvancedFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlayerWrapper",
+        "printedName": "PlayerWrapper",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlayerWrapper",
+                "printedName": "AdvancedFramework.PlayerWrapper",
+                "usr": "s:17AdvancedFramework13PlayerWrapperC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17AdvancedFramework13PlayerWrapperCACycfc",
+            "mangledName": "$s17AdvancedFramework13PlayerWrapperCACycfc",
+            "moduleName": "AdvancedFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17AdvancedFramework13PlayerWrapperC",
+        "mangledName": "$s17AdvancedFramework13PlayerWrapperC",
+        "moduleName": "AdvancedFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/davidsteinacher\/Downloads\/lucky\/AdvancedFramework\/AdvancedFramework\/PlayerWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1099,
+      "length": 18,
+      "value": "\"your license key\""
+    },
+    {
+      "filePath": "\/Users\/davidsteinacher\/Downloads\/lucky\/AdvancedFramework\/AdvancedFramework\/PlayerWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1178,
+      "length": 20,
+      "value": "\"your analytics key\""
+    }
+  ]
+}

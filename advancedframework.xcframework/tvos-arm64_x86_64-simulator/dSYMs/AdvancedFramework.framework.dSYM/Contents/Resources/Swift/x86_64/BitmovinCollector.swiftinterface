@@ -1,0 +1,44 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-tvos14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BitmovinCollector
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BitmovinPlayerCore
+import CoreCollector
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+@objc public class BitmovinPlayerCollector : ObjectiveC.NSObject, CoreCollector.Collector {
+  public typealias TPlayer = BitmovinPlayerCore.Player
+  @objc public init(config: CoreCollector.BitmovinAnalyticsConfig)
+  @objc public func attachPlayer(player: BitmovinPlayerCore.Player)
+  @objc public func detachPlayer()
+  @objc public func getCustomData() -> CoreCollector.CustomData
+  @objc public func setCustomData(customData: CoreCollector.CustomData)
+  @objc public func setCustomDataOnce(customData: CoreCollector.CustomData)
+  @objc public func addSourceMetadata(playerSource: BitmovinPlayerCore.Source, sourceMetadata: CoreCollector.SourceMetadata)
+  @objc public func getUserId() -> Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class BitmovinAnalytics : BitmovinCollector.BitmovinPlayerCollector {
+  @objc override public init(config: CoreCollector.BitmovinAnalyticsConfig)
+  @objc public func attachBitmovinPlayer(player: BitmovinPlayerCore.Player)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class BitmovinAdAdapter : ObjectiveC.NSObject, CoreCollector.AdAdapter {
+  public func releaseAdapter()
+  public func getModuleInformation() -> CoreCollector.AdModuleInformation
+  public func isAutoPlayEnabled() -> Swift.Bool
+  @objc deinit
+}
+extension BitmovinCollector.BitmovinAdAdapter : BitmovinPlayerCore.PlayerListener {
+  @objc dynamic public func onAdManifestLoaded(_ event: BitmovinPlayerCore.AdManifestLoadedEvent, player: BitmovinPlayerCore.Player)
+  @objc dynamic public func onAdStarted(_ event: BitmovinPlayerCore.AdStartedEvent, player: BitmovinPlayerCore.Player)
+  @objc dynamic public func onAdFinished(_ event: BitmovinPlayerCore.AdFinishedEvent, player: BitmovinPlayerCore.Player)
+  @objc dynamic public func onAdBreakStarted(_ event: BitmovinPlayerCore.AdBreakStartedEvent, player: BitmovinPlayerCore.Player)
+  @objc dynamic public func onAdBreakFinished(_ event: BitmovinPlayerCore.AdBreakFinishedEvent, player: BitmovinPlayerCore.Player)
+  @objc dynamic public func onAdClicked(_ event: BitmovinPlayerCore.AdClickedEvent, player: BitmovinPlayerCore.Player)
+  @objc dynamic public func onAdSkipped(_ event: BitmovinPlayerCore.AdSkippedEvent, player: BitmovinPlayerCore.Player)
+  @objc dynamic public func onAdError(_ event: BitmovinPlayerCore.AdErrorEvent, player: BitmovinPlayerCore.Player)
+  @objc dynamic public func onAdQuartile(_ event: BitmovinPlayerCore.AdQuartileEvent, player: BitmovinPlayerCore.Player)
+}
