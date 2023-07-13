@@ -1,0 +1,11 @@
+framework module AdvancedFramework {
+  umbrella header "AdvancedFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module AdvancedFramework.Swift {
+  header "AdvancedFramework-Swift.h"
+  requires objc
+}

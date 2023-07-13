@@ -11,7 +11,7 @@ struct PackageMetadata {
 let package = Package(
     name: "AdvancedFrameworkPackage",
     platforms: [
-        .iOS(.v14)
+        .iOS(.v14), .tvOS(.v14)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -40,6 +40,6 @@ let package = Package(
                     .define("BUILD_LIBRARY_FOR_DISTRIBUTION", to: "YES")
                 ]
         ),
-        .binaryTarget(name: "AdvancedFramework", path: "./advancedframework.xcframework")
+        .binaryTarget(name: "AdvancedFramework", path: "./AdvancedFramework.xcframework")
     ]
 )
